@@ -6,7 +6,7 @@ namespace Framework.Actions.HomePageActions
 {
    public class HomepageActions:CommonActions
     {
-        public static void NavigateToURL()
+        public  void NavigateToURL()
         {
             GoToUrl();
         }
