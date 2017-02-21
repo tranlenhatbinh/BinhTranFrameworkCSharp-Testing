@@ -63,14 +63,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Steps\Homepage.cs" />
+    <Compile Include="Features\Homepage\TC_HomePage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TC_HomePage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Steps\Homepage\Homepage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\Homepage\TC_HomePage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TC_HomePage.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Choose>
