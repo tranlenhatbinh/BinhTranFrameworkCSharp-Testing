@@ -4,6 +4,7 @@ namespace Framework.Actions.Common
 {
    public class CommonActions
     {
+        
         public static void GoToUrl()
         {
             Constant.webdriver = new FirefoxDriver();
