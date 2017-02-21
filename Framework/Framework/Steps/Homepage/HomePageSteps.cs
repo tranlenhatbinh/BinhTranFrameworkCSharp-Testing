@@ -8,9 +8,9 @@ namespace Framework.Steps.Homepage
     {
         //Navigate to Home page
         [Given ("I navigate to Home page")]
-        public void NavigateToHomePage()
+        public static void NavigateToHomePage()
         {
-            NavigateToURL("http://localhost");
+            NavigateToURL();
         }
 
     }

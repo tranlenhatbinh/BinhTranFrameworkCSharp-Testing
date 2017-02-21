@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+﻿using Framework.Actions.Common;
 
 namespace Framework.Actions.Common
+
 {
    public class CommonActions
     {
-        public static IWebDriver webdriver = new FirefoxDriver();
+        
 
         
-        public static void GoToUrl(string URL)
+        public static void GoToUrl()
         {
-            webdriver.Navigate().GoToUrl(URL);
+            Constant.webdriver.Navigate().GoToUrl("http://192.168.1.11");
         }
     }
 }
