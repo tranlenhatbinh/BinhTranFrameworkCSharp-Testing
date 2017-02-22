@@ -16,9 +16,7 @@ namespace Framework.Steps.Homepage
        
         public void NavigateToHomePage()
         {
-           
             NavigateToURL();
-            
         }
 
     }
