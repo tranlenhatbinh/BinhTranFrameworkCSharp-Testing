@@ -10,7 +10,7 @@ namespace Framework.Steps.Homepage
         [Given ("I navigate to Home page")]
         public void NavigateToHomePage()
         {
-            NavigateToURL("http://192.168.1.11/");
+            NavigateToURL("http://localhost:81");
         }
 
     }

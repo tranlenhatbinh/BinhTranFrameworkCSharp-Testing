@@ -1,7 +1,5 @@
 ﻿Feature: TC_HomePage
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Verify that the Home link displays
 
 @mytag
 Scenario: Homepage displays
