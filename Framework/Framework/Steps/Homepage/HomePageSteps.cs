@@ -10,7 +10,7 @@ namespace Framework.Steps.Homepage
         [Given ("I navigate to Home page")]
         public void NavigateToHomePage()
         {
-            NavigateToURL("http://localhost:81");
+            NavigateToURL("http://search.ebscohost.com/login.aspx?authtype=uid&user=normwright&password=pass$word&group=edsacad&profile=newacdem14");
         }
 
     }
