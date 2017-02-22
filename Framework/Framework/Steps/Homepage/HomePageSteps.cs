@@ -1,7 +1,8 @@
 ﻿using TechTalk.SpecFlow;
 using Framework.Actions.HomePageActions;
 using OpenQA.Selenium;
-
+using System;
+   
 namespace Framework.Steps.Homepage
 {
 
@@ -15,7 +16,9 @@ namespace Framework.Steps.Homepage
        
         public void NavigateToHomePage()
         {
+           
             NavigateToURL();
+            
         }
 
     }
