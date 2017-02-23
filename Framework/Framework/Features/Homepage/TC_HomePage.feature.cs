@@ -74,7 +74,7 @@ namespace Framework.Features.Homepage
 this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.Given("I navigate to Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
+#line 9
  testRunner.Then("the Home link displays", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

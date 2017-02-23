@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System.Configuration;
+
 namespace Framework.Actions.Common
 {
   public  class Constant
