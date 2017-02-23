@@ -18,6 +18,12 @@ namespace Framework.Steps.Homepage
         {
             NavigateToURL();
         }
+        [Then(@"the Home link displays")]
+        public void checkHomeText()
+        {
+            string actualText = HomepageActions.getLinkName();
+            CheckTextDisplays("Home", actualText);
+        }
 
     }
 }

@@ -8,5 +8,12 @@ namespace Framework.Actions.HomePageActions
         {
             GoToUrl();
         }
+
+        public static string getLinkName()
+        {
+            return GetText();
+        }
+
+        
     }
 }

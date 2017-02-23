@@ -1,13 +1,14 @@
 ﻿using OpenQA.Selenium.Firefox;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
+using OpenQA.Selenium;
 using System;
 namespace Framework.Actions.Common
 
 {
    public class CommonActions
     {
-        
         public static void GoToUrl()
         {
             // Constant.webdriver = new InternetExplorerDriver();
@@ -27,5 +28,17 @@ namespace Framework.Actions.Common
 
 
         }
+
+        public static void CheckTextDisplays(string expectedText, string actualText)
+        {
+            Assert.AreEqual(expectedText,actualText);
+        }
+
+        public static string GetText()
+        {
+            return Constant.webdriver.FindElement(By.XPath("//*[@id='header-area']/div[1]/div/div[4]/div/ul/li[1]/a/span")).Text;
+        }
+
+      
     }
 }
