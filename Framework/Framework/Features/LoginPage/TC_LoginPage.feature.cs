@@ -23,7 +23,7 @@ namespace Framework.Features.LoginPage
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "TC_LoginPage.feature"
+#line 1 "TC_HomePage.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
