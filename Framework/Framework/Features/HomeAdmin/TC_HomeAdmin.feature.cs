@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Framework.Features.LoginPage
+namespace Framework.Features.HomeAdmin
 {
     using TechTalk.SpecFlow;
     
@@ -30,7 +30,7 @@ namespace Framework.Features.LoginPage
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_Home Admin page", "\tVerify that user is able to login at the Login page admin", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_Home Admin page", "\tVerify that the Order link displays at Home Admin page", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -47,7 +47,7 @@ namespace Framework.Features.LoginPage
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "TC_Home Admin page")))
             {
-                Framework.Features.LoginPage.TC_HomeAdminPageFeature.FeatureSetup(null);
+                Framework.Features.HomeAdmin.TC_HomeAdminPageFeature.FeatureSetup(null);
             }
         }
         
@@ -68,19 +68,19 @@ namespace Framework.Features.LoginPage
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("User is able to login with valid username and password")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("TC_HomeAdmin_Order_001")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void UserIsAbleToLoginWithValidUsernameAndPassword()
+        public virtual void TC_HomeAdmin_Order_001()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User is able to login with valid username and password", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Order_001", new string[] {
                         "mytag"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
- testRunner.Given("I navigate to Login page Admin", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to Home Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
- testRunner.When("I login to Admin Xcart site with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("the Orders link displays at the left side", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
