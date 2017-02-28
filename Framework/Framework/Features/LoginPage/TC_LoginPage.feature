@@ -5,4 +5,3 @@
 Scenario: Homepage displays
 	Given I navigate to Home page
 	Then the Home link displays
-	
