@@ -1,4 +1,4 @@
-﻿Feature: TC_Login page
+﻿Feature: TC_Home Admin page
 	Verify that user is able to login at the Login page admin
 
 @mytag

@@ -18,19 +18,19 @@ namespace Framework.Features.LoginPage
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class TC_LoginPageFeature
+    public partial class TC_HomeAdminPageFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "TC_LoginPage.feature"
+#line 1 "TC_HomeAdmin.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_Login page", "\tVerify that user is able to login at the Login page admin", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_Home Admin page", "\tVerify that user is able to login at the Login page admin", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -45,9 +45,9 @@ namespace Framework.Features.LoginPage
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "TC_Login page")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "TC_Home Admin page")))
             {
-                Framework.Features.LoginPage.TC_LoginPageFeature.FeatureSetup(null);
+                Framework.Features.LoginPage.TC_HomeAdminPageFeature.FeatureSetup(null);
             }
         }
         
@@ -69,7 +69,7 @@ namespace Framework.Features.LoginPage
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("User is able to login with valid username and password")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Login page")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
         public virtual void UserIsAbleToLoginWithValidUsernameAndPassword()
         {

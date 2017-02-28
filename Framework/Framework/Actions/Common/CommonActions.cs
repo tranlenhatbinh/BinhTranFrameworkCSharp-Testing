@@ -34,9 +34,9 @@ namespace Framework.Actions.Common
             Assert.AreEqual(expectedText,actualText);
         }
 
-        public static string GetText()
+        public string GetText(string xpath)
         {
-            return Constant.webdriver.FindElement(By.XPath("//form[@id='login_form']//button")).Text;
+            return FindWebElement(xpath).Text;
         }
 
         public IWebElement FindWebElement(string xpath)
