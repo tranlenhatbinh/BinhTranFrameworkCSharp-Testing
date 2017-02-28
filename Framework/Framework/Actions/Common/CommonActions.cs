@@ -39,6 +39,9 @@ namespace Framework.Actions.Common
             return Constant.webdriver.FindElement(By.XPath("//form[@id='login_form']//button")).Text;
         }
 
-      
+        public IWebElement FindWebElement(string xpath)
+        {
+            return Constant.webdriver.FindElement(By.XPath(xpath));
+        }
     }
 }

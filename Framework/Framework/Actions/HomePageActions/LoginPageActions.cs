@@ -2,7 +2,7 @@
 using System;
 namespace Framework.Actions.HomePageActions
 {
-   public class HomepageActions:CommonActions
+   public class LoginPageActions:CommonActions
     {
         public  void NavigateToURL()
         {
@@ -14,6 +14,9 @@ namespace Framework.Actions.HomePageActions
             return GetText();
         }
 
-        
+        public void Login(string username, string password)
+        {
+            FindWebElement("//form[@id='login_form']//input[@name='login']").SendKeys(username);
+        }
     }
 }

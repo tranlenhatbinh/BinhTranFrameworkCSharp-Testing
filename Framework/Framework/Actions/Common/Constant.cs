@@ -7,5 +7,7 @@ namespace Framework.Actions.Common
     {
         public static IWebDriver webdriver;
         public static string URL = ConfigurationManager.AppSettings["url"];
+        public static string username = "tranlenhatbinh191988@gmail.com";
+        public static string password = "123456";
     }
 }
