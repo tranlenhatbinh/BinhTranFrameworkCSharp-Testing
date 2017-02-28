@@ -1,7 +1,7 @@
-﻿Feature: TC_HomePage
-	Verify the Home link displays at Home page
+﻿Feature: TC_Login page
+	Verify that user is able to login at the Login page admin
 
 @mytag
-Scenario: Homepage displays
-	Given I navigate to Home page
-	Then the Home link displays
+Scenario: User is able to login with username and password 
+	Given I navigate to Login page Admin
+	Then the Log in button displays

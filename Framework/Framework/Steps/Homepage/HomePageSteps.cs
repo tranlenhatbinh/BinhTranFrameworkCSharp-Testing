@@ -12,17 +12,17 @@ namespace Framework.Steps.Homepage
 
         public IWebDriver webdriver;
         //Navigate to Home page
-        [Given ("I navigate to Home page")]
+        [Given ("I navigate to Login page Admin")]
        
         public void NavigateToHomePage()
         {
             NavigateToURL();
         }
-        [Then(@"the Home link displays")]
+        [Then(@"the Log in button displays")]
         public void checkHomeText()
         {
-            string actualText = HomepageActions.getLinkName();
-            CheckTextDisplays("Home", actualText);
+            string actualText = getLinkName();
+            CheckTextDisplays("Log in", actualText);
         }
 
     }
