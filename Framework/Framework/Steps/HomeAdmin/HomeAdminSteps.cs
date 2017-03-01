@@ -9,7 +9,6 @@ namespace Framework.Steps.Homepage
  public class HomeAdminSteps : HomeAdminActions
     {
 
-        public IWebDriver webdriver;
         //Navigate to Home page
         [Given ("I navigate to Home Admin page")]
        
