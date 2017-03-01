@@ -36,7 +36,7 @@ namespace Framework.Actions.Common
 
         public static string GetText()
         {
-            return Constant.webdriver.FindElement(By.XPath("//*[@id='header-area']/div[1]/div/div[4]/div/ul/li[1]/a/span")).Text;
+            return Constant.webdriver.FindElement(By.XPath("//span[.='Home']")).Text;
         }
 
       

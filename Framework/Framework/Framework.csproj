@@ -95,9 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
+    <Folder Include="Steps\Order\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Features\Homepage\TC_Homepage.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TC_Homepage.feature.cs</LastGenOutput>
