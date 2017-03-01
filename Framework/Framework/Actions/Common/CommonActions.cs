@@ -1,32 +1,16 @@
-﻿using OpenQA.Selenium.Firefox;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.IE;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using System;
+
 namespace Framework.Actions.Common
 
 {
-   public class CommonActions
+    public class CommonActions
     {
-        public static void GoToUrl()
+        public static void NavigateURL()
         {
-            // Constant.webdriver = new InternetExplorerDriver();
-
-           // FirefoxDriverService service = FirefoxDriverService.CreateDefaultService(@"E:\geckodriver-v0.11.1-win64", "geckodriver.exe");
-          //  service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
-            Constant.webdriver = new FirefoxDriver();
-            Constant.webdriver.Navigate().GoToUrl(Constant.URL);
-
-            /*
-            Constant.webdriver = new ChromeDriver(@"E:\driver\");
-            Constant.webdriver.Navigate().GoToUrl(Constant.URL);
-            */
-
-            //Constant.webdriver = new InternetExplorerDriver(@"E:\abc\");
-            //Constant.webdriver.Navigate().GoToUrl(Constant.URL);
-
-
+            BrowserManager browser = new BrowserManager();
+            browser.OpenBrowser("firefox");
+            Webdriver.driver.Navigate().GoToUrl(Constant.URL);
         }
 
         public static void CheckTextDisplays(string expectedText, string actualText)
@@ -34,11 +18,14 @@ namespace Framework.Actions.Common
             Assert.AreEqual(expectedText,actualText);
         }
 
-        public static string GetText()
+        public string GetText(string xpath)
         {
-            return Constant.webdriver.FindElement(By.XPath("//span[.='Home']")).Text;
+            return FindWebElement(xpath).Text;
         }
 
-      
+        public IWebElement FindWebElement(string xpath)
+        {
+            return Webdriver.driver.FindElement(By.XPath(xpath));
+        }
     }
 }
