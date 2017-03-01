@@ -21,7 +21,7 @@ namespace Framework.Steps.Homepage
         public void checkHomeText()
         {
             string actualText = getLinkName();
-            CheckTextDisplays("Orders", actualText);
+            CheckTextDisplays("Evaluation notice", actualText);
         }
 
     }

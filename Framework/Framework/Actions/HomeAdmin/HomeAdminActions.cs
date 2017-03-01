@@ -1,7 +1,8 @@
 ﻿using Framework.Actions.GeneralPage;
-using Framework.Actions.Common; 
-     
+using Framework.Actions.Common;
+
 using System.Threading;
+using OpenQA.Selenium;
 
 namespace Framework.Actions.HomeAdmin
 {
@@ -18,8 +19,8 @@ namespace Framework.Actions.HomeAdmin
             EnterValue(".//*[@id='login_form']/table/tbody[1]/tr[1]/td/input", username);
             EnterValue(".//*[@id='login_form']/table/tbody[1]/tr[2]/td/input", password);
             Click(".//*[@id='login_form']/table/tbody[2]/tr/td/button");
-            Thread.Sleep(5);
-            FindWebElement(".//*[@id='ui-id-3']/div/div/div[3]/div[2]/button[2]");
+            Thread.Sleep(8);
+            
         }
     }
 }

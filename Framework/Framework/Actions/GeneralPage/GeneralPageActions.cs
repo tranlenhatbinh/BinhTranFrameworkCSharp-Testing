@@ -6,7 +6,7 @@ namespace Framework.Actions.GeneralPage
     {
         public string getLinkName()
         {
-          return GetText("");
+          return GetText(".//*[@id='ui-id-4']");
         }
 
         public void EnterValue(string locator, string value)
