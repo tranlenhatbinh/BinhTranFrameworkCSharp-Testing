@@ -8,8 +8,6 @@ namespace Framework.Actions.Common
     {
         public static void NavigateURL()
         {
-            BrowserManager browser = new BrowserManager();
-            browser.OpenBrowser("firefox");
             Webdriver.driver.Navigate().GoToUrl(Constant.URL);
         }
 

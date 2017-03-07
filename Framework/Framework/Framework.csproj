@@ -74,17 +74,26 @@
     <Compile Include="Actions\Common\CommonActions.cs" />
     <Compile Include="Actions\Common\Constant.cs" />
     <Compile Include="Actions\Common\Webdriver.cs" />
+    <Compile Include="Features\LoginAdmin\LoginAdmin.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginAdmin.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\BaseTest.cs" />
+    <Compile Include="Steps\LoginAdmin\LoginAdminSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Features\LoginAdmin\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Steps\LoginAdmin\" />
     <Folder Include="Steps\OrderAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Features\LoginAdmin\LoginAdmin.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoginAdmin.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

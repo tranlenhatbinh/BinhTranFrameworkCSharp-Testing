@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
+using System.Diagnostics;
 
 namespace Framework.Actions.Common
 {
@@ -26,6 +27,16 @@ namespace Framework.Actions.Common
                     Webdriver.driver = new FirefoxDriver();
                     Webdriver.driver.Manage().Window.Maximize();
                     break;
+            }
+        }
+
+        public void CloseBrowser()
+        {
+            Webdriver.driver.Manage().Cookies.DeleteAllCookies();
+            Webdriver.driver.Quit();
+            foreach (Process process in Process.GetProcessesByName("iexplore"))
+            {
+                process.Kill();
             }
         }
     }
