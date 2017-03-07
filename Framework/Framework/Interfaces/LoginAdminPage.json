@@ -1,0 +1,19 @@
+[
+  {
+    "controlName": "username textbox",
+    "type": "name",
+    "value": "login"
+  },
+
+  {
+    "controlName": "password textbox",
+    "type": "name",
+    "value": "password"
+  },
+
+  {
+    "controlName": "login button",
+    "type": "classname",
+    "value": "submit"
+  }
+]

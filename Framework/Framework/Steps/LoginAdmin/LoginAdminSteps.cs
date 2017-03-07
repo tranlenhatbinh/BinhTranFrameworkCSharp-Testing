@@ -1,27 +1,28 @@
-﻿using System;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
+using Framework.Actions.Common;
 
 namespace Framework.Steps.LoginAdmin
 {
     [Binding]
-    public class LoginAdminSteps
+    
+    public class LoginAdminSteps:LoginAdminPage
     {
         [Given(@"I navigate to Login Admin page")]
         public void GivenINavigateToLoginAdminPage()
         {
-            ScenarioContext.Current.Pending();
+            NavigateURL();
         }
         
         [When(@"I login with valid account")]
         public void WhenILoginWithValidAccount()
         {
-            ScenarioContext.Current.Pending();
+            Login(Constant.username, Constant.password);
         }
         
         [Then(@"the Home Admin page displays")]
         public void ThenTheHomeAdminPageDisplays()
         {
-            ScenarioContext.Current.Pending();
+           
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Framework.Steps
         [BeforeScenario]
         public void BeforeScenario()
         {
+            browserManager = new BrowserManager();
             browserManager.OpenBrowser(Constant.browser);
         }
 

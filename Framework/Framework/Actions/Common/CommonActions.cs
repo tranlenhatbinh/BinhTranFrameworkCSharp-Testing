@@ -15,15 +15,5 @@ namespace Framework.Actions.Common
         {
             Assert.AreEqual(expectedText,actualText);
         }
-
-        public string GetText(string xpath)
-        {
-            return FindWebElement(xpath).Text;
-        }
-
-        public IWebElement FindWebElement(string xpath)
-        {
-            return Webdriver.driver.FindElement(By.XPath(xpath));
-        }
     }
 }

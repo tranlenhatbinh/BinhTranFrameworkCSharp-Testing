@@ -2,12 +2,12 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
 using System.Diagnostics;
-
+using OpenQA.Selenium;
 namespace Framework.Actions.Common
 {
     public class BrowserManager
     {
-        public void OpenBrowser(string browsername)
+        public IWebDriver OpenBrowser(string browsername)
         {
             switch(browsername.ToUpper())
             {
@@ -28,6 +28,7 @@ namespace Framework.Actions.Common
                     Webdriver.driver.Manage().Window.Maximize();
                     break;
             }
+             return Webdriver.driver;
         }
 
         public void CloseBrowser()
