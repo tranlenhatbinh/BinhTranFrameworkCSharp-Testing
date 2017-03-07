@@ -74,27 +74,17 @@
     <Compile Include="Actions\Common\CommonActions.cs" />
     <Compile Include="Actions\Common\Constant.cs" />
     <Compile Include="Actions\Common\Webdriver.cs" />
-    <Compile Include="Actions\GeneralPage\GeneralPageActions.cs" />
-    <Compile Include="Actions\HomeAdmin\HomeAdminActions.cs" />
-    <Compile Include="Features\HomeAdmin\TC_HomeAdmin.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TC_HomeAdmin.feature</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Steps\HomeAdmin\HomeAdminSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Features\LoginAdmin\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Steps\Order\" />
+    <Folder Include="Steps\LoginAdmin\" />
+    <Folder Include="Steps\OrderAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Features\HomeAdmin\TC_HomeAdmin.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TC_HomeAdmin.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
