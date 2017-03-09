@@ -1,5 +1,6 @@
 ﻿Feature: TC_Home Admin page
 	Verify that the "Orders list" link displays after clicking on the Orders link at Home Admin page
+	Verify that the Orders page displays after clicking on the Orders list link at Home Admin page
 
 Scenario: TC_HomeAdmin_Orders_001
 	Given I navigate to Login Admin page

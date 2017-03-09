@@ -31,7 +31,8 @@ namespace Framework.Features.HomeAdmin
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_Home Admin page", "\tVerify that the \"Orders list\" link displays after clicking on the Orders link at" +
-                    " Home Admin page", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    " Home Admin page\r\n\tVerify that the Orders page displays after clicking on the Or" +
+                    "ders list link at Home Admin page", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,15 +75,15 @@ namespace Framework.Features.HomeAdmin
         public virtual void TC_HomeAdmin_Orders_001()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_001", ((string[])(null)));
-#line 4
-this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 6
- testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
-  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
  testRunner.Then("Orders list link displays below it", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -94,17 +95,17 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void TC_HomeAdmin_Orders_002()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_002", ((string[])(null)));
-#line 10
-this.ScenarioSetup(scenarioInfo);
 #line 11
- testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 12
- testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
-  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
-  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
+  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 16
  testRunner.Then("Orders page displays", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
