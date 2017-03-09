@@ -19,10 +19,5 @@ namespace Framework.Steps.LoginAdmin
             Login(Constant.username, Constant.password);
         }
         
-        [Then(@"the Home Admin page displays")]
-        public void ThenTheHomeAdminPageDisplays()
-        {
-           
-        }
     }
 }

@@ -29,5 +29,12 @@ namespace Framework.Steps.OrderAdmin
         {
             ScenarioContext.Current.Pending();
         }
+
+        [Then(@"the Home Admin page displays")]
+        public void ThenTheHomeAdminPageDisplays()
+        {
+            string actualText = getOrdersName();
+            CheckTextDisplays("Orders", actualText);
+        }
     }
 }

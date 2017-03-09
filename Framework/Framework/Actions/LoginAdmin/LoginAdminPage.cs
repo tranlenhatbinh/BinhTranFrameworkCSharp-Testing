@@ -1,4 +1,4 @@
-﻿using Framework.Actions.GeneralPage;
+﻿using Framework.Actions.GeneralAdminPage;
 
 namespace Framework.Steps.LoginAdmin
 {
