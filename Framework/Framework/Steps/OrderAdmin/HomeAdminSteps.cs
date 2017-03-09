@@ -38,5 +38,25 @@ namespace Framework.Steps.OrderAdmin
             string actualText = getOrdersName();
             CheckTextDisplays("Orders", actualText);
         }
+
+        [When(@"I enter Order ID on OrderID textbox")]
+        public void WhenIEnterOrderIDOnOrderIDTextbox()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [When(@"I click on Search button")]
+        public void WhenIClickOnSearchButton()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"the information of this OrderID displays")]
+        public void ThenTheInformationOfThisOrderIDDisplays()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        
     }
 }
