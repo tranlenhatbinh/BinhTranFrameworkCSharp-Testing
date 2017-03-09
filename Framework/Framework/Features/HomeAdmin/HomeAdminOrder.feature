@@ -17,6 +17,7 @@ Scenario: TC_HomeAdmin_Orders_002
 		And I click on Orders list link 
 	Then Orders page displays
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_003
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -26,6 +27,7 @@ Scenario: TC_HomeAdmin_Orders_003
 		And I click on Search button
     Then the information of this OrderID displays 
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_004
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -35,6 +37,7 @@ Scenario: TC_HomeAdmin_Orders_004
 		And I click on Search button
     Then all appropriate Orders of this payment status option display 
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_005
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -44,6 +47,7 @@ Scenario: TC_HomeAdmin_Orders_005
 		And I click on Search button
     Then all appropriate Orders of this shipping status option display 
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_006
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -51,6 +55,7 @@ Scenario: TC_HomeAdmin_Orders_006
 		And I click on Orders list link 
     Then All orders link displays on Orders page
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_007
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -60,6 +65,7 @@ Scenario: TC_HomeAdmin_Orders_007
 		And I click on Search button
     Then all appropriate Orders of date range value display 
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_008
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -69,6 +75,7 @@ Scenario: TC_HomeAdmin_Orders_008
 		And I click on Clear button
     Then the Order ID value is cleared on OrderID textbox
 	
+@ignore
 Scenario: TC_HomeAdmin_Orders_009
 	Given I navigate to Login Admin page
 	When I login with valid account
@@ -76,6 +83,7 @@ Scenario: TC_HomeAdmin_Orders_009
 		And I click on Orders list link 
     Then Save filter link displays
 
+@ignore
 Scenario: TC_HomeAdmin_Orders_010
 	Given I navigate to Login Admin page
 	When I login with valid account
