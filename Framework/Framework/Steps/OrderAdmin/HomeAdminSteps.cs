@@ -23,12 +23,13 @@ namespace Framework.Steps.OrderAdmin
         [When(@"I click on Orders list link")]
         public void WhenIClickOnOrdersListLink()
         {
-            ScenarioContext.Current.Pending();
+            clickOrderListLink();
         }
         [Then(@"Orders page displays")]
         public void ThenOrdersPageDisplays()
         {
-            ScenarioContext.Current.Pending();
+            string actualText = getOrdersTitleName();
+            CheckTextDisplays("Orders", actualText);
         }
 
         [Then(@"the Home Admin page displays")]
