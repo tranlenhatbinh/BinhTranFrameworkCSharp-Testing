@@ -16,7 +16,8 @@ namespace Framework.Steps.OrderAdmin
         [Then(@"Orders list link displays below it")]
         public void ThenOrdersListLinkDisplaysBelowIt()
         {
-            ScenarioContext.Current.Pending();
+            string actualText = getOrdersLinkName();
+            CheckTextDisplays("Orders list", actualText);
         }
 
         [When(@"I click on Orders list link")]

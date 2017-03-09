@@ -15,5 +15,11 @@ namespace Framework.Actions.HomeAdmin
             WaitForControl("orders link", 5);
             return GetText("orders link");
         }
+
+        public string getOrdersLinkName()
+        {
+            WaitForControl("orders list link", 5);
+            return GetText("orders list link");
+        }
     }
 }

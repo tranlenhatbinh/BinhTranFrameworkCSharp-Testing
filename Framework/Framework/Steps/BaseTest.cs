@@ -23,7 +23,7 @@ namespace Framework.Steps
         [AfterScenario]
         public void AfterScenario()
         {
-            browserManager.CloseBrowser();
+            //browserManager.CloseBrowser();
         }
     }
 }
