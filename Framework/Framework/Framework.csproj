@@ -75,7 +75,7 @@
     <Compile Include="Actions\Common\CommonActions.cs" />
     <Compile Include="Actions\Common\Constant.cs" />
     <Compile Include="Actions\Common\Webdriver.cs" />
-    <Compile Include="Actions\GeneralPage\GeneralPage.cs" />
+    <Compile Include="Actions\GeneralAdminPage\GeneralPage.cs" />
     <Compile Include="Actions\HomeAdmin\HomeAdminPage.cs" />
     <Compile Include="Features\HomeAdmin\HomeAdminOrder.feature.cs">
       <AutoGen>True</AutoGen>

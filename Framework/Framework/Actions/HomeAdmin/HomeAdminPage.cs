@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Framework.Actions.GeneralAdminPage;
 
 namespace Framework.Actions.HomeAdmin
 {
-  public class HomeAdminPage
+    public class HomeAdminPage:GeneralPage
     {
-
+        public void clickOrderLink()
+        {
+            WaitForControl("orders link", 3);
+            Click("orders link");
+        }
     }
 }

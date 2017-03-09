@@ -1,15 +1,16 @@
 ﻿using System;
 using TechTalk.SpecFlow;
+using Framework.Actions.HomeAdmin;
 
 namespace Framework.Steps.OrderAdmin
 {
     [Binding]
-    public class HomeAdminSteps
+    public class HomeAdminSteps:HomeAdminPage
     {
         [When(@"I click on Orders link on the left")]
         public void WhenIClickOnOrdersLinkOnTheLeft()
         {
-            ScenarioContext.Current.Pending();
+            clickOrderLink();
         }
         
         [Then(@"Orders list link displays below it")]

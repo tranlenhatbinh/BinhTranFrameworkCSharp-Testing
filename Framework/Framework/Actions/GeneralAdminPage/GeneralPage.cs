@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Framework.Actions.Common;
 using OpenQA.Selenium;
 using System.Threading;
@@ -10,9 +7,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Web.Script.Serialization;
 
-namespace Framework.Actions.GeneralPage
+namespace Framework.Actions.GeneralAdminPage
 {
- public class GeneralPage:CommonActions
+    public class GeneralPage:CommonActions
     {
         public string GetText(string locator)
         {
