@@ -34,3 +34,21 @@ Scenario: TC_HomeAdmin_Orders_004
 	    And I select payment status option from Payment statuses dropdown
 		And I click on Search button
     Then all appropriate Orders of this payment status option display 
+
+Scenario: TC_HomeAdmin_Orders_005
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+	    And I select shipping status option from Shipping statuses dropdown
+		And I click on Search button
+    Then all appropriate Orders of this shipping status option display 
+
+Scenario: TC_HomeAdmin_Orders_006
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+	    And I select shipping status option from Shipping statuses dropdown
+		And I click on Search button
+    Then all appropriate Orders of this shipping status option display 
