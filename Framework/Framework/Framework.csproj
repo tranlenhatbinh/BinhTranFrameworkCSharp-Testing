@@ -91,10 +91,9 @@
     <Compile Include="Steps\BaseTest.cs" />
     <Compile Include="Actions\LoginAdmin\LoginAdminPage.cs" />
     <Compile Include="Steps\LoginAdmin\LoginAdminSteps.cs" />
+    <Compile Include="Steps\OrderAdmin\HomeAdminSteps.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Steps\OrderAdmin\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>

@@ -1,3 +1,19 @@
 [
-  { }
+  {
+    "controlName": "orders link",
+    "type": "xpath",
+    "value": "//span[.='Orders']"
+  },
+
+  {
+    "controlName": "orders list link",
+    "type": "xpath",
+    "value": "//span[.='Orders list']"
+  },
+
+  {
+    "controlName": "orders title",
+    "type": "classname",
+    "value": "location-text"
+  }
 ]
