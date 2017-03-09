@@ -206,11 +206,103 @@ this.ScenarioSetup(scenarioInfo);
 #line 51
   testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 52
-     testRunner.And("I select shipping status option from Shipping statuses dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 53
-  testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.Then("All orders link displays on Orders page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("TC_HomeAdmin_Orders_007")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
+        public virtual void TC_HomeAdmin_Orders_007()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_007", ((string[])(null)));
 #line 54
-    testRunner.Then("all appropriate Orders of this shipping status option display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+this.ScenarioSetup(scenarioInfo);
+#line 55
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 56
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 57
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 58
+  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 59
+  testRunner.And("I enter date range value on date range textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 60
+  testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 61
+    testRunner.Then("all appropriate Orders of date range value display", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("TC_HomeAdmin_Orders_008")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
+        public virtual void TC_HomeAdmin_Orders_008()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_008", ((string[])(null)));
+#line 63
+this.ScenarioSetup(scenarioInfo);
+#line 64
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 65
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 66
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 67
+  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 68
+  testRunner.And("I enter Order ID on OrderID textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 69
+  testRunner.And("I click on Clear button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 70
+    testRunner.Then("the Order ID value is cleared on OrderID textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("TC_HomeAdmin_Orders_009")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
+        public virtual void TC_HomeAdmin_Orders_009()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_009", ((string[])(null)));
+#line 72
+this.ScenarioSetup(scenarioInfo);
+#line 73
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 74
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 75
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 76
+  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 77
+    testRunner.Then("Save filter link displays", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("TC_HomeAdmin_Orders_010")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "TC_Home Admin page")]
+        public virtual void TC_HomeAdmin_Orders_010()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_HomeAdmin_Orders_010", ((string[])(null)));
+#line 79
+this.ScenarioSetup(scenarioInfo);
+#line 80
+ testRunner.Given("I navigate to Login Admin page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 81
+ testRunner.When("I login with valid account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 82
+  testRunner.And("I click on Orders link on the left", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 83
+  testRunner.And("I click on Orders list link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 84
+    testRunner.Then("Export all CSV button displays", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

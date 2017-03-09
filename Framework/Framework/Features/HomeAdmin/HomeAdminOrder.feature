@@ -49,6 +49,36 @@ Scenario: TC_HomeAdmin_Orders_006
 	When I login with valid account
 		And I click on Orders link on the left  
 		And I click on Orders list link 
-	    And I select shipping status option from Shipping statuses dropdown
+    Then All orders link displays on Orders page
+
+Scenario: TC_HomeAdmin_Orders_007
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+		And I enter date range value on date range textbox
 		And I click on Search button
-    Then all appropriate Orders of this shipping status option display 
+    Then all appropriate Orders of date range value display 
+
+Scenario: TC_HomeAdmin_Orders_008
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+		And I enter Order ID on OrderID textbox
+		And I click on Clear button
+    Then the Order ID value is cleared on OrderID textbox
+	
+Scenario: TC_HomeAdmin_Orders_009
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+    Then Save filter link displays
+
+Scenario: TC_HomeAdmin_Orders_010
+	Given I navigate to Login Admin page
+	When I login with valid account
+		And I click on Orders link on the left  
+		And I click on Orders list link 
+    Then Export all CSV button displays
