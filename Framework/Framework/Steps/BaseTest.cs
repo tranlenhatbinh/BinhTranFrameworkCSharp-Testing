@@ -7,7 +7,7 @@ namespace Framework.Steps
     public sealed class BaseTest
     {
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
-
+        //
         BrowserManager browserManager;
         [BeforeScenario]
         public void BeforeScenario()
